@@ -1,10 +1,14 @@
-package com.example.recyclerview;
+package com.example.recyclerview.Controller;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+
+import com.example.recyclerview.R;
 
 public class UserListActivity extends AppCompatActivity {
 
@@ -21,4 +25,5 @@ public class UserListActivity extends AppCompatActivity {
                     .add(R.id.fragment_container,new UserListFragment())
                     .commit();
     }
+
 }
